@@ -1,0 +1,105 @@
+.newsletter {
+    background-color: var(--cor-destaque-secundario);
+    padding: 40px 5% 40px 5%;
+    border-radius: 5px;
+    height: 256px;
+    gap: 40px;
+    margin: 0 auto;
+  
+}
+
+.newsletter__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  
+}
+
+.newsletter__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 31px;
+    font-weight: 700;
+    color: var(--cor-texto-principal);
+    line-height: 120%;
+}
+
+.newsletter__texto {
+    font-family: var(--fonte-texto);
+    font-size: 20px;
+    color: var(--cor-texto-secundario);
+    line-height: 24px;
+    font-weight: 400;
+    
+}
+
+.newsletter__form {
+    display: flex;
+    width: 952px;
+    height: 56px;
+    gap: 10px;
+    
+}
+
+.newsletter__form_input {
+    width: 678px;
+    height: 56px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 32px;
+    border: 2px solid var(--cor-texto-principal);
+    background-color: var(--cor-texto);
+    color: var(--cor-texto-principal);
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+}
+
+.newsletter__form_input::placeholder {
+    color: var(--cor-texto-secundario);
+    font-size: 20px;
+    font-family: var(--fonte-texto);
+    line-height: 120%;
+}
+
+.newsletter__form_input:focus {
+    outline: none;
+    border: 2px solid var(--cor-destaque-principal);
+}
+
+.newsletter__form_botao {
+    width: 155px;
+    height: 56px;
+    padding: 16px 24px 16px 24px;
+    border-radius: 32px;
+    border: none;
+    background-color: var(--cor-fundo-botao);
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .newsletter {
+        padding: 40px 5%;
+        height: auto;
+    }
+
+    .newsletter__container {
+        width: 100%;
+        padding: 0 5%;
+    }
+
+    .newsletter__form {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+    }
+
+    .newsletter__form_input {
+        width: calc(100% - 170px);
+    }
+    
+}
