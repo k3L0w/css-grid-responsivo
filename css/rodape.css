@@ -55,3 +55,21 @@
     color: var(--cor-destaque-secundario);
     line-height: 19.2px;
 }
+
+.rodape__coluna_list {
+    list-style-type: none;
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.rodape__coluna_list_item a {
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+..rodape__coluna_list_item {
+    margin-bottom: 8px;
+
+}
